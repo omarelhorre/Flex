@@ -9,7 +9,7 @@
 voyelles [aeiuoyAEIOY]
 consonnes [AZRTPMLKJHGFDSQWXCVBNzrtplmkjhgfdsqwxcvbn]
 accents [éèàç]
-ponctuation[,;.:!]
+ponctuation [,;.:!]
 special [&~"#'\{\}\(\)\[\]-|`\_^@=?/§]
 %%
 {voyelles} {printf("<%s> Voyelles\n",yytext); i++;}
