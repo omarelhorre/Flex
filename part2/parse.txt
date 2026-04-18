@@ -1,0 +1,9 @@
+int main()
+{
+    int a;
+    int b;
+    int c = a + b;
+    printf("Hello World");
+    printf("%d",c);
+    return 0;
+}

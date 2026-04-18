@@ -807,7 +807,7 @@ YY_RULE_SETUP
 case 3:
 YY_RULE_SETUP
 #line 60 "main.l"
-{fprintf(ptr,"<span> %s </span>",yytext); Ajouter(yytext);}
+{fprintf(ptr,"<span> %s </span>",yytext);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
@@ -818,7 +818,7 @@ case 5:
 /* rule 5 can match eol */
 YY_RULE_SETUP
 #line 62 "main.l"
-{fprintf(ptr,"<span style=\" font-style : italic \"> %s </span>",yytext); Ajouter(yytext); }
+{fprintf(ptr,"<span style=\" font-style : italic \"> %s </span>",yytext);}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
@@ -828,23 +828,23 @@ YY_RULE_SETUP
 case 7:
 YY_RULE_SETUP
 #line 64 "main.l"
-{fprintf(ptr,"<span style= \" color : red \"> %s </span>",yytext); Ajouter(yytext); }
+{fprintf(ptr,"<span style= \" color : red \"> %s </span>",yytext);}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
 #line 65 "main.l"
-{fprintf(ptr,"<span style= \" color : red \"> %s </span>",yytext); Ajouter(yytext); }
+{fprintf(ptr,"<span style= \" color : red \"> %s </span>",yytext);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
 #line 66 "main.l"
-{fprintf(ptr,"<span> %s </span>",yytext); Ajouter(yytext); }
+{fprintf(ptr,"<span> %s </span>",yytext);}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
 #line 67 "main.l"
 {printf("%s ERREUR LEXICALE\n",yytext);
-    fprintf(ptr,"<span style= \"color : gray ; font-weight : bold \"> %s </span>",yytext); Ajouter(yytext); }
+    fprintf(ptr,"<span style= \"color : gray ; font-weight : bold \"> %s </span>",yytext);}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP

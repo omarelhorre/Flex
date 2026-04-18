@@ -57,15 +57,15 @@ affect (:=)
 %%
 [\n] {fprintf(ptr,"</br>");}
 [ \t]
-{reserved} {fprintf(ptr,"<span> %s </span>",yytext); Ajouter(yytext);}
+{reserved} {fprintf(ptr,"<span> %s </span>",yytext);}
 {identifiers} {fprintf(ptr,"<span style=\"color : blue\"> %s </span>",yytext); Ajouter(yytext); }
-{suite} {fprintf(ptr,"<span style=\" font-style : italic \"> %s </span>",yytext); Ajouter(yytext); }
+{suite} {fprintf(ptr,"<span style=\" font-style : italic \"> %s </span>",yytext);}
 {integ} {fprintf(ptr,"<span> %s </span>",yytext); Ajouter(yytext); } 
-{composeOp} {fprintf(ptr,"<span style= \" color : red \"> %s </span>",yytext); Ajouter(yytext); }
-{op} {fprintf(ptr,"<span style= \" color : red \"> %s </span>",yytext); Ajouter(yytext); }
-{affect} {fprintf(ptr,"<span> %s </span>",yytext); Ajouter(yytext); }
+{composeOp} {fprintf(ptr,"<span style= \" color : red \"> %s </span>",yytext);}
+{op} {fprintf(ptr,"<span style= \" color : red \"> %s </span>",yytext);}
+{affect} {fprintf(ptr,"<span> %s </span>",yytext);}
 . {printf("%s ERREUR LEXICALE\n",yytext);
-    fprintf(ptr,"<span style= \"color : gray ; font-weight : bold \"> %s </span>",yytext); Ajouter(yytext); }
+    fprintf(ptr,"<span style= \"color : gray ; font-weight : bold \"> %s </span>",yytext);}
 %%
 int main()
 {
