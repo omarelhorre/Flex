@@ -1,5 +1,5 @@
 
-#line 2 "lex.yy.c"
+#line 3 "lex.yy.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -446,8 +446,8 @@ char *yytext;
 #line 1 "exemple2.l"
 #line 3 "exemple2.l"
 int i = 0;
-#line 449 "lex.yy.c"
 #line 450 "lex.yy.c"
+#line 451 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -458,7 +458,7 @@ int i = 0;
  */
 #include <unistd.h>
 #endif
-    
+
 #ifndef YY_EXTRA_TYPE
 #define YY_EXTRA_TYPE void *
 #endif
@@ -666,7 +666,7 @@ YY_DECL
 	{
 #line 7 "exemple2.l"
 
-#line 669 "lex.yy.c"
+#line 670 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -744,7 +744,7 @@ YY_RULE_SETUP
 #line 11 "exemple2.l"
 ECHO;
 	YY_BREAK
-#line 747 "lex.yy.c"
+#line 748 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1753,7 +1753,7 @@ void yyfree (void * ptr )
 
 int main()
 {
-    yyin = fopen("fich_1","r");
+    yyin = fopen("input.txt","r");
     yylex();
     printf("Il y'a %d nombres binaires",i);
 }
